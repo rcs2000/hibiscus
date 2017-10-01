@@ -166,6 +166,7 @@ public class UmsatzList extends TablePart implements Extendable
       addColumn(i18n.tr("Verwendungszweck"),        Tag.SVWZ.name());
     
     addColumn(i18n.tr("Datum"),                     "datum_pseudo", new DateFormatter(HBCI.DATEFORMAT));
+    addColumn(i18n.tr("Valuta"),                    "valuta", new DateFormatter(HBCI.DATEFORMAT));
     addColumn(i18n.tr("Betrag"),                    "betrag",new CurrencyFormatter(HBCIProperties.CURRENCY_DEFAULT_DE,HBCI.DECIMALFORMAT),false,Column.ALIGN_RIGHT);
     addColumn(i18n.tr("Kategorie"),                 "umsatztyp",null,false);
     // BUGZILLA 66 http://www.willuhn.de/bugzilla/show_bug.cgi?id=66
